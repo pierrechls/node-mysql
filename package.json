@@ -1,0 +1,14 @@
+{
+  "name": "node-mysql",
+  "version": "0.0.1",
+  "description": "A NodeJS project for testing SQL request",
+  "author": "Pierre Charles <pierre.chls@gmail.com>",
+  "private": true,
+  "scripts": {
+    "sql": "node lib/index.js"
+  },
+  "dependencies": {
+    "express": "^4.10.6",
+    "mysql": "^2.5.4"
+  }
+}

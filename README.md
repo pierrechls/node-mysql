@@ -18,25 +18,26 @@ $ git clone git@github.com:pierrechls/node-mysql.git
 $ npm i            # or `yarn`
 ```
 
-#### Configure MySQL settings
+#### Configure settings
 
-Go to the `settings` folder and set the default MySQL configuration into the  `mysql.json` file :
+- Duplicate the `.env.example` file and rename it to `.env`
+- Remplace the database configuration values into your `.env` file by your database values
+- Remplace the request configuration value into your `.env` file by your SQL request
 
-```bash
-{
-  "host": "<YOUR_HOST>",
-  "user": "<YOUR_USER>",
-  "password": "<YOUR_PASSWORD>",
-  "database": "<YOUR_DATABASE>"
-}
-```
-
-#### Configure your SQL request
-
-Edit the `request.js` file with your custom request, for example :
+This is an example configuration :
 
 ```bash
-module.exports = "SELECT Beer, Mojito FROM Drinks"
+# DATABASE CONFIGURATION
+
+DB_HOST="localhost"
+DB_USER="pepito"
+DB_PASSWORD="#P3pit0"
+DB_NAME="aye"
+
+
+# REQUEST
+
+REQUEST="SELECT * FROM `biscuits` LIMIT 100"
 ```
 
 #### Run your SQL request
